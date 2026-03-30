@@ -7,7 +7,7 @@ const SUIT_RANK: Record<Suit, number> = {
   Eicheln: 1,
 };
 
-class Card {
+export class Card {
   constructor(public value: number, public suit: Suit) {}
 
   beats(other: Card): boolean {
